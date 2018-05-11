@@ -1,0 +1,48 @@
+main {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .card {
+            background-color: #DABCDA;
+            margin: 10px;
+            padding: 10px;
+            .card-like {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .like {
+                    margin-right: 9px;
+                    background-color: #94D9D0;
+                    border-radius: 7px;
+                    border: 1px solid black;
+                    font-size: 20px;
+                    padding: 4px 12px 4px 12px;
+                    &:active {
+                        background: white;  }
+                }
+                img {
+                    width: 85%;
+                }
+                h3 {
+                    font-size: 50px;
+                    color: red;
+                    margin: 0;
+                }
+            }
+            .inner-card {
+                display: flex;
+                .card-text {
+                    width: 100%;
+                    margin-left: 10px;
+                }
+                .card-img {
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                    }
+                } 
+            }
+        }
+    }
+}        
